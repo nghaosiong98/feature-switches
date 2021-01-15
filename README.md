@@ -4,7 +4,7 @@ This is a simple feature switches to manage users' access to new features based 
 ## Available Endpoints
 - ```GET /feature?email=XXX&featureName=XXX```  
 This endpoint receives `email` (user's email) and `featureName` as request parameters and return the following endpoint.
-```json
+```
 {
   "canAccess": true|false (will be true if the user has accss to the featureName)
 }
@@ -14,7 +14,7 @@ This endpoint receives `email` (user's email) and `featureName` as request param
 This endpoint receives the following request in JSON format and returns an empty response
 with HTTP Status OK (200) when the database is updated successfully, otherwise return HTTP
 Status Not Modifies (304).
-```json
+```
 {
   "feature": "xxx", (string)
   "email": "xxx", (string)
